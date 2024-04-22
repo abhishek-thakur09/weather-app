@@ -21,7 +21,6 @@ async function getApi(){
         const response = await  fetch(`${api.base}weather?q=${search.value}&units=metric&appid=${api.key}`)
     
             const data = await response.json();
-            // console.log(data);
             return display(data);
     }
     catch(error){
