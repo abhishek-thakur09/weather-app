@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url(https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+#main{
+    min-width: 350px;
+    height: auto;
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    background: rgba(91, 90, 90, 0.429);
+    backdrop-filter: saturate(140%) blur(4px);
+    position: relative;
+}
+
+#heading{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+
+#search-input{
+    padding: 10px 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: white;
+    background: rgba(45, 44, 44, 0.505);
+    backdrop-filter: saturate(140%) blur(4px);
+}
+
+#submit{
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+#submit:hover{
+    background-color: rgba(102, 24, 176, 0.237);
+    color: aliceblue;
+}
+
+#search-bar p{
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+
+
+
+.location, #city, #date-time{
+    padding-bottom: 10px;
+}
+
+
+.current{
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+    color: white;
+}
+
+.current::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1.5px;
+        background-color: white;
+    }
+.current>*{
+    padding-bottom: 4px;
+}
+
+.prevent-select {
+    user-select: none; 
+  }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="ap.css" />
+  </head>
+  <body>
+    <div id="main" class="prevent-select">
+      <div id="heading"><h2>Weather App</h2></div>
+
+      <!-- search-bar -->
+      <div id="search-bar">
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="Search city name..."
+        />
+        <div id="btn">
+          <button id="submit">Submit</button>
+        </div>
+        <p class="alert"></p>
+      </div>
+
+      <div id="image">
+        <img src="" alt="" class="weather-icon" />
+      </div>
+
+      <div class="location">
+        <div id="city">
+          <h4>New York, US</h4>
+        </div>
+        <div id="date-time">Thrusday, 26 Nov 2020</div>
+      </div>
+
+      <div class="current">
+          <div id="temp">Temp: <span>12℃</span></div>
+          <div id="weather">Weather: Rain</div>
+          <div id="temp-range">Temp Range: 9℃/ 14℃</div>
+      </div>
+
+    </div>
+    <script src="ap.js"></script>
+  </body>
+</html>
