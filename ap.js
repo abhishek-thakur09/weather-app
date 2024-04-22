@@ -56,7 +56,7 @@ function display(data){
         weather.innerText = `Weather: ${data.weather[0].main}`
 
         const temp_range = document.querySelector("#temp-range");
-        temp_range.innerText = `Temp Range: ${Math.round(data.main.temp_min)}℃/ ${math.round(data.main.temp_max)}℃`
+        temp_range.innerText = `Temp Range: ${Math.round(data.main.temp_min)}℃/ ${Math.round(data.main.temp_max)}℃`
 
     }
 }
@@ -75,27 +75,3 @@ function datefunction(d){
 
     return `${day}, ${date} ${month} ${year}`;
 }
-
-
-// btn.addEventListener("click", getinput);
-
-// function getinput(e){
-//         // e.preventDefault();
-//         if(e.type == "click"){
-//             getdata(search.value);
-//         }
-// }
-
-
-// function getdata(){
-//     fetch(`${api.base}weather?q=${search.value}&units=metric&appid=${api.key}`).then(response => {
-//         return response.json();
-
-//    }).then(displayData);
-// }
-
-
-// function displayData(response){
-//     console.log(response);
-
-// }
